@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="hide"></div>
+    <div class="score-box">
+      <p>ROCK<br>PAPER<br>SCISSORS<br>LIZARD<br>SPOCK</p>
+      <p>SCORE<br><spam class="score-point">0</spam></p>
+    </div>
+    <div class="play-ground">
+      <div id="pentagons">
+        <div>
+          <img src="images/bg-pentagon.svg" alt="pentagons" id="pentagons">
+        </div>
+      </div>
+      <div id="game-options">
+        <div id="top">
+          <div class="game-buttons">
+            <div class="game-buttons-inner">
+              <img src="images/icon-scissors.svg" alt="scissors" id="scissors" class="game-image" onclick="userInput(id, 'hsl(39, 89%, 49%):hsl(40, 84%, 53%)')">
+            </div>
+          </div>
+        </div>
+        <div id="middle">
+          <div class="game-buttons">
+            <div class="game-buttons-inner">
+              <img src="images/icon-spock.svg" alt="spock" id="spock" class="game-image" onclick="userInput(id, 'hsl(189, 59%, 53%):hsl(189, 58%, 57%)')">
+            </div>
+          </div>
+          <div class="game-buttons">
+            <div class="game-buttons-inner">
+              <img src="images/icon-paper.svg" alt="paper" id="paper" class="game-image" onclick="userInput(id, 'hsl(230, 89%, 62%):hsl(230, 89%, 65%)')">
+            </div>
+          </div>
+        </div>
+        <div id="bottom">
+          <div class="game-buttons">
+            <div class="game-buttons-inner">
+              <img src="images/icon-lizard.svg" alt="lizard" id="lizard" class="game-image" onclick="userInput(id,'hsl(261, 73%, 60%):hsl(261, 72%, 63%)')">
+            </div>
+          </div>
+          <div class="game-buttons">
+            <div class="game-buttons-inner">
+              <img src="images/icon-rock.svg" alt="rock" id="rock" class="game-image" onclick="userInput(id, 'hsl(349, 71%, 52%):hsl(349, 70%, 56%)')">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="piked">
+      <div class="you-picked">
+        <p>YOUR PICKED</p>
+        <div id="you-picked-outer">
+          <div class="game-buttons-you-picked">
+            <div class="game-buttons-inner-you-picked">
+              <img src="#" alt="you-picked" id="you-picked" class="game-image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="result-group">
+        <h6 class="game-result">RESULT</h6>
+        <button class="play-again" onclick="playAgain()">PLAY AGAIN</button>
+      </div>
+      <div class="house-picked">
+        <p>THE HOUSE PICKED</p>
+        <div id="house-picked-outer">
+          <div class="game-buttons-house-picked">
+            <div class="game-buttons-inner-house-picked">
+              <div class="loading-outer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rules">
+      <button onclick="openRules()">RULES</button>
+        <div id="rules-content">
+          <div id="rules-header">
+            <p>RULES</p>
+            <img src="images/icon-close.svg" alt="close" id="close-rules" onclick="closeRules()">
+          </div>
+          <div id="rules-image">
+            <img src="images/image-rules-bonus.svg" alt="rules">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
+<script src="script.js"></script>
