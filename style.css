@@ -63,12 +63,16 @@
 }
 
 #middle{
+    width: 30rem;
+    margin: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #bottom{
+    width: 25rem;
+    margin: 5rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,13 +83,14 @@
 }
 
 #pentagons{
-    padding: 40px 0;
+    margin-top: 1rem;
+    min-width: 25rem;
 }
 
 .game-buttons{
     padding: 20px;
-    width: 120px;
-    height: 120px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     align-items: center;
     box-shadow:inset 0px -5px 0px 0px rgba(0, 0, 0, 0.311);
@@ -98,16 +103,16 @@
 .game-buttons-inner{
     display: flex;
     height: auto;
-    width: 90px;
-    height: 90px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     background-color: white;
     position: relative;
     /* box-shadow: 0px -5px 0px rgb(220, 220, 220); */
-    left: -5px;
-    top: -5px;
+    left: -0.27rem;
+    top: -0.4rem;
     box-shadow:inset 0px 5px 0px 0px rgb(221, 226, 230);
 }
 
@@ -177,8 +182,8 @@
 .score-box > p:nth-child(1){
     font-weight: bolder;
     letter-spacing: 0.7px;
-    line-height: 20px;
-    font-size: 3vh;
+    line-height: 1.5rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -187,9 +192,10 @@
     text-align: center;
     letter-spacing: 1px;
     background-color: white;
-    width: 15vw;
+    width: 10vw;
     border-radius: 8px;
     padding: 10px;
+    
 }
 
 .score-point{
@@ -340,6 +346,10 @@
 
 .loading-outer>div{
     margin-top: 0px;
+}
+
+.game-image{
+    max-width: 2rem;
 }
 
 /* @media screen and (max-width: 375px){
